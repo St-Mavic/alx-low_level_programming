@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -7,9 +8,13 @@
 
 int main(void)
 {
-int i;
-for (i = 0; i < 10; i++)
-	putchar(i + '0');
+int a;
+for (a = 0; a < 10; a++)
+	putchar(a + '0');
+for (a = 0; a < 10; a++)
+putchar(',');
+for (a = 0; a < 10; a++)
+putchar(' ');
 putchar('\n');
 return (0);
 }
