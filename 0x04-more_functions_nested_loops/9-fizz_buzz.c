@@ -25,6 +25,10 @@ int main(void)
 		}
 		else
 			printf("%d ", g);
+		if (g == 100)
+		{
+			printf("%d", g);
+		}
 	}
 	putchar('\n');
 	return (0);
