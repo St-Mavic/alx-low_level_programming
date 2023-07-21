@@ -9,7 +9,7 @@ int main(void)
 {
 	int g;
 
-	for (g = 1; g <= 100; g++)
+	for (g = 1; g < 100; g++)
 	{
 		if (g % 3 == 0 && g % 5 == 0)
 		{
@@ -23,14 +23,10 @@ int main(void)
 		{
 			printf("Buzz ");
 		}
-		else if (g == 100)
-		{
-			printf("%d", g);
-		}
 		else
 			printf("%d ", g);
 	}
-	putchar('\n');
+	printf("Buzz\n");
 	return (0);
 
 }
