@@ -23,12 +23,12 @@ int main(void)
 		{
 			printf("Buzz ");
 		}
-		else
-			printf("%d ", g);
-		if (g == 100)
+		else if (g == 100)
 		{
 			printf("%d", g);
 		}
+		else
+			printf("%d ", g);
 	}
 	putchar('\n');
 	return (0);
