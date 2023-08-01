@@ -5,7 +5,7 @@
  * @n: n parameter
  * @s: char pointer
  * @b: function parameter
- *
+ * Return: S value
  */
 char *_memset(char *s, char b, unsigned int n)
 {
