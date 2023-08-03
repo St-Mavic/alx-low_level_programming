@@ -16,6 +16,13 @@ int _sqrt_recursion(int n)
 	else
 		return (_sqrt(n, 0));
 }
+/**
+ * _sqrt - second function
+ * @n: first parameter
+ * @b: second parameter
+ *
+ * Return: a value
+ */
 
 int _sqrt(int n, int b)
 {
