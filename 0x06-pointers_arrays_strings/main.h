@@ -10,4 +10,5 @@ char *rot13(char *);
 char *cap_string(char *);
 char *string_toupper(char *);
 void reverse_array(int *a, int n);
+void print_number(int n);
 #endif
