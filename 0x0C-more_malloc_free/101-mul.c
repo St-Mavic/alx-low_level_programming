@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+int main(int argc, char *argv[]);
 int is_digit(char s);
 int _strlen(char *str);
 char *arr(int size);
