@@ -1,5 +1,10 @@
 #ifndef DOG_H
 #define DOG_H
+/*
+ * dog_t - a new type
+ */
+
+typedef struct dog dog_t;
 /**
  * struct dog - holds a collection of items
  * @name: first member
@@ -7,12 +12,12 @@
  * @owner: third member
  */
 
-typedef struct dog
+struct dog
 {
 char *name;
 float age;
 char *owner;
-}dog_t;
+};
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
