@@ -45,7 +45,6 @@ int main(int argc, char *argv[])
 	int cp_content, paste;
 	int r, wr;
 	char *buffer;
-	mode_t mode = S_IRUSR | S_IWUSR;
 
 	if (argc != 3)
 	{
@@ -55,7 +54,7 @@ int main(int argc, char *argv[])
 	buffer = temp(argv[2]);
 	cp_content = open(argv[1], O_RDONLY);
 	r = read(cp_content, buffer, 1024);
-	paste = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, mode);
+	paste = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
 		if (cp_content == -1 || r == -1)
